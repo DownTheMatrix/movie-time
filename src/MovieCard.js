@@ -26,12 +26,12 @@ class MovieCard extends Component {
                 alt={`${this.props.title} Poster`}
                 title={`${this.props.title}`}
             />
-            <div className="MovieCard-info">
+            <figcaption className="MovieCard-info">
               <h3 className="MovieCard-title">{this.props.title}</h3>
               <span className="MovieCard-date">({formattedDate})</span>
               <p className="MovieCard-summary">{this.props.overview}</p>
               <a href="#" className="MovieCard-btn">Read More</a>
-          </div>
+          </figcaption>
           </figure>
           )
         }
