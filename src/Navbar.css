@@ -1,0 +1,23 @@
+.Navbar {
+    background-color: #081c24;
+    width: 100%;
+}
+
+.Navbar-logo {
+    margin-left: 2rem;
+}
+
+.Navbar-logo img {
+    width: 10rem;
+    height: 10rem;
+}
+
+@media (min-width: 500px) {
+    .Navbar-logo {
+        margin-left: 4rem;
+    }
+    .Navbar-logo img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
