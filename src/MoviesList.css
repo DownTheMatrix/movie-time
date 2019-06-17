@@ -1,0 +1,20 @@
+.MoviesList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: stretch;
+}
+
+@media (min-width: 600px) {
+    .MoviesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .MoviesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

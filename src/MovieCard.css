@@ -1,0 +1,61 @@
+.MovieCard {
+    
+}
+
+.MovieCard-box {  /* Figure */
+    width: 100%;
+    border: 2px solid teal;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.MovieCard-poster {  /* Image */
+   display: block;
+   width: 100%;
+   height: auto;
+   border-top-left-radius: .6rem;
+   border-top-right-radius: .6rem;
+}
+
+.MovieCard-info {
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.MovieCard-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.MovieCard-date {  /* Span */
+    font-size: 1.6rem;
+}
+
+.MovieCard-summary {
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.MovieCard-btn:link,
+.MovieCard-btn:visited {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: orangered;
+    display: inline-block;
+    width: max-content;
+}
+
+@media (min-width: 768px) {
+    .MovieCard-title {
+        font-size: 2rem;
+    }
+
+    .MovieCard-summary {
+        font-size: 1.8rem;
+    }
+}

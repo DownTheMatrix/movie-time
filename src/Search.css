@@ -1,0 +1,45 @@
+.Search {
+    margin-top: 2rem;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Search-form {
+    margin-bottom: 5rem;
+}
+
+.Search-form label {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.Search-form input {
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 10rem;
+    border-color: teal;
+    font-family: inherit;
+    font-size: 1.4rem;
+    -webkit-appearance: unset;
+}
+
+@media (min-width: 600px) {
+    .Search-form label {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .Search-form label {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .Search-form label {
+        font-size: 3.4rem;
+    }
+}
