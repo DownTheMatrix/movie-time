@@ -4,6 +4,7 @@ import {apiKey} from "./auth";
 import "./App.css";
 import MoviesList from "./MoviesList";
 import Search from "./Search";
+import Navbar from "./Navbar";
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,8 @@ class App extends Component {
 
   render() {
     return (
+      <React.Fragment>
+        <Navbar />
       <div className="App">
         <Search 
           submitForm={this.handleSubmit}
@@ -46,6 +49,7 @@ class App extends Component {
           movies={this.state.movies}
         />
       </div>
+      </React.Fragment>
     );
   }
 }
