@@ -1,10 +1,9 @@
-.MovieCard {
+/* .MovieCard {
     
-}
+} */
 
 .MovieCard-box {  /* Figure */
     width: 100%;
-    border: 2px solid teal;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -12,7 +11,7 @@
 .MovieCard-poster {  /* Image */
    display: block;
    width: 100%;
-   height: auto;
+   max-height: 40rem; 
    border-top-left-radius: .6rem;
    border-top-right-radius: .6rem;
 }
@@ -52,7 +51,7 @@
 
 @media (min-width: 768px) {
     .MovieCard-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .MovieCard-summary {
