@@ -1,11 +1,15 @@
 import React, {Component} from "react";
+import "./Navbar.css";
+import logo from "./images/db-logo.svg";
 
 class Navbar extends Component {
     render() {
         return (
-            <div className="Navbar">
-
-            </div>
+            <nav className="Navbar">
+                <div className="Navbar-logo">
+                    <img src={logo} alt=""/>
+                </div>
+            </nav>
         );
     }
 }
