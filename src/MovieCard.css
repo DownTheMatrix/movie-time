@@ -40,13 +40,17 @@
     text-overflow: ellipsis;
 }
 
-.MovieCard-btn:link,
-.MovieCard-btn:visited {
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: orangered;
-    display: inline-block;
-    width: max-content;
+.MovieCard-btn {
+    font-size: 1.6rem;
+    background-color: teal;
+    color: #fff;
+    padding: 1rem 1.25rem;
+    font-family: inherit;
+    margin-top: 1rem;
+}
+
+.MovieCard-btn:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
