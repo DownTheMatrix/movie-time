@@ -37,10 +37,16 @@
     .Search-form label {
         font-size: 3rem;
     }
+    .Search-form input {
+        font-size: 1.6rem;
+    }
 }
 
 @media (min-width: 960px) {
     .Search-form label {
         font-size: 3.4rem;
+    }
+    .Search-form input {
+        font-size: 1.8rem;
     }
 }
