@@ -30,7 +30,7 @@ class MovieCard extends Component {
               <h3 className="MovieCard-title">{this.props.title}</h3>
               <span className="MovieCard-date">({formattedDate})</span>
               <p className="MovieCard-summary">{this.props.overview}</p>
-              <a href="#" className="MovieCard-btn">Read More</a>
+              <button className="MovieCard-btn">Read More</button>
           </figcaption>
           </figure>
           )
