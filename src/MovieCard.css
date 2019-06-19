@@ -25,6 +25,10 @@
 .MovieCard-title {
     font-size: 1.6rem;
     font-weight: bold;
+   /*  width: 100%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .MovieCard-date {  /* Span */
@@ -42,7 +46,7 @@
 
 .MovieCard-btn {
     font-size: 1.6rem;
-    background-color: teal;
+    background-color: rgb(0, 128, 128);
     color: #fff;
     padding: 1rem 1.25rem;
     font-family: inherit;
@@ -51,6 +55,7 @@
 
 .MovieCard-btn:hover {
     cursor: pointer;
+    background-color: rgb(3, 110, 110);
 }
 
 @media (min-width: 768px) {
