@@ -1,6 +1,6 @@
-/* .MovieCard {
-    
-} */
+.MovieCard {
+    position: relative;
+}
 
 .MovieCard-box {  /* Figure */
     width: 100%;
@@ -16,7 +16,7 @@
    border-top-right-radius: .6rem;
 }
 
-.MovieCard-info {
+.MovieCard-info {  /* Figcaption */
     padding: 2rem;
     display: grid;
     grid-gap: 1rem;
@@ -29,6 +29,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.MovieCard-alt-heading {
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .MovieCard-date {  /* Span */
@@ -58,8 +63,12 @@
     background-color: rgb(3, 110, 110);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {  /* 768px */
     .MovieCard-title {
+        font-size: 1.8rem;
+    }
+
+    .MovieCard-alt-heading {
         font-size: 1.8rem;
     }
 
