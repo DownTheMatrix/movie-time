@@ -15,6 +15,8 @@ class MoviesList extends Component {
                     voteAverage={movie.vote_average}
                     originalLanguage={movie.original_language}
                     appropriateness={movie.adult} /* Boolean */
+                    viewMovieInfo={this.props.viewMovieInfo}
+                    movieId={movie.id}
                 />
             );
         });
