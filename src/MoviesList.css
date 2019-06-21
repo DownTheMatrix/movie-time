@@ -7,13 +7,13 @@
     align-items: stretch;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {  /* 600px */
     .MoviesList {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 63.75em) {  /* 1020px */
     .MoviesList {
         grid-template-columns: repeat(3, 1fr);
     }
