@@ -2,6 +2,8 @@
 
 MovieTime is a website built in React.js using [The Movie Database API](https://www.themoviedb.org/documentation/api).
 
+![app screenshot](https://github.com/DownTheMatrix/MovieTime/blob/master/Screenshot.png?raw=true)
+
 ## How To Run The App
 To get started:
 
