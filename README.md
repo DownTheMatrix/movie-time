@@ -3,7 +3,7 @@
 MovieTime is a website built in React.js using [The Movie Database API](https://www.themoviedb.org/documentation/api).
 No external frameworks have been used. The code uses CSS Flexbox to align and center element horizontally inside of their respective containers, and CSS Grid to display them on both the horizontal and the vertical axes. 
 
-![app screenshot](https://github.com/DownTheMatrix/MovieTime/blob/master/Screenshot.png?raw=true)
+![Mobile view screenshot](https://github.com/DownTheMatrix/movie-time/blob/master/Screenshot.png?raw=true)
 
 ## How To Run The App
 
