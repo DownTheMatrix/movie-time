@@ -35,7 +35,7 @@ class App extends Component {
         this.setState({
           movies: [...data.results]
         });
-        console.log(this.state.movies);
+        /* console.log(this.state.movies); */
       });
   }
 
