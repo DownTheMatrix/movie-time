@@ -1,17 +1,16 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./Navbar.css";
-import logo from "./images/db-logo.svg";
 
 class Navbar extends Component {
-    render() {
-        return (
-            <nav className="Navbar">
-                <div className="Navbar-logo">
-                    <img src={logo} alt=""/>
-                </div>
-            </nav>
-        );
-    }
+  render() {
+    return (
+      <nav className="Navbar">
+        <div className="Navbar-heading">
+          <h1>Movie<span className="hl">Time</span></h1>
+        </div>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;
