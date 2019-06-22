@@ -15,13 +15,16 @@ To get started:
 + install all project dependencies with `npm install`
 + start the development server with `npm start`
 
-Alternatively, you can view the live version hosted on Netlify [here]().
-
 ### Get the API key
 
-In order to fetch data from the API and display the movies, you need an API key. To get one, follow the steps outlined on the official website [here](https://developers.themoviedb.org/3/getting-started/introduction).
+In order to fetch data from the API and display the movies, you need an API key. To get one, follow the steps outlined on the TMDb official website [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-Once you have your own key, you can either manually insert it into the URL you will send a request to, or create a file and import it into the App.js component. 
+Once you have your own key, you can either manually insert it into the URL you will send a request to, or create a file and import it into the App.js component. In the current project, I followed the following steps: 
+
+1. I created a separate JavaScript file
+2. I declared a variable and stored the API key value as a string into that variable
+3. I exported the variable using the syntax `export let apiKey = "<insert your API key here>"`
+4. Finally, I exported the said variable into the component where I needed it (specifically, where I fetched the data from the API). In my case, it was the App.js file
 
 #### Create React App
 
