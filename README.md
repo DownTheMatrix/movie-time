@@ -30,6 +30,7 @@ Once you have your own key, you can either manually insert it into the URL you w
 
 + Further style the UI and make it abide by the Material Design principles
 + Expand the website functionalities, like adding a link which redirects to the movie details and extra info on the TMDb webpage
++ Add pagination
 + Improve the UX when navigating to the movie details view
 + Add breakpoints for medium size screens
 + Responsive typography and secondary font family
