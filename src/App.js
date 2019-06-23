@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { apiKey } from "./auth";
 import "./App.css";
-import MoviesList from "./MoviesList";
-import Search from "./Search";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import MovieInfo from "./MovieInfo";
+import MoviesList from "./components/MoviesList";
+import Search from "./components/Search";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import MovieInfo from "./components/MovieInfo";
 
 class App extends Component {
   constructor(props) {
