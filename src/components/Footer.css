@@ -1,0 +1,15 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #081c24;
+}
+
+.Footer-logo {
+    margin-left: 2rem;
+}
+
+.Footer-logo img {
+    width: 15rem;
+    height: 15rem;
+}

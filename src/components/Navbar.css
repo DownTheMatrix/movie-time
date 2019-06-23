@@ -1,0 +1,28 @@
+.Navbar {
+    background-color: #081c24;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+.Navbar-heading {
+    color: #fff;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.Navbar-heading .hl {
+    color: #01d277;
+}
+
+@media (min-width: 31.25em) {  /* 500px */
+    .Navbar-logo {
+        margin-left: 4rem;
+    }
+    .Navbar-logo img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
