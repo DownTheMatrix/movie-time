@@ -13,7 +13,7 @@ class App extends Component {
     this.state = {
       movies: [],
       searchTerm: "",
-      currentMovie: null
+      currentMovie: null,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -26,14 +26,12 @@ class App extends Component {
   handleSubmit(evt) {
     evt.preventDefault();
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${
-        this.state.searchTerm
-      }`
+      `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${this.state.searchTerm}`
     )
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         this.setState({
-          movies: [...data.results]
+          movies: [...data.results],
         });
         /* console.log(this.state.movies); */
       });
@@ -42,42 +40,42 @@ class App extends Component {
   /* Handle the input field value change and passes it to state */
   handleChange(evt) {
     this.setState({
-      [evt.target.name]: evt.target.value
+      [evt.target.name]: evt.target.value,
     });
   }
 
   /* Open a separate view with the movie info and details */
   viewMovieInfo(id) {
-    const filteredMovie = this.state.movies.filter(movie => movie.id === id);
+    const filteredMovie = this.state.movies.filter((movie) => movie.id === id);
     const newCurrentMovie = filteredMovie.length > 0 ? filteredMovie[0] : null;
-    this.setState({currentMovie: newCurrentMovie});
+    this.setState({ currentMovie: newCurrentMovie });
   }
 
   /* Close the view with the movie info and details */
   closeMovieInfo() {
-    this.setState({currentMovie: null});
+    this.setState({ currentMovie: null });
   }
 
   /* Display or hide the search input field depending on currentMovie */
   displaySearchArea() {
-    if(this.state.currentMovie === null) {
+    if (this.state.currentMovie === null) {
       return (
-          <React.Fragment>
-              <Search
-              submitForm={this.handleSubmit}
-              searchValue={this.handleChange}
-              inputValue={this.state.searchTerm}
-            />
-            <MoviesList 
-              movies={this.state.movies} 
-              viewMovieInfo={this.viewMovieInfo}
-            />
-          </React.Fragment>
+        <React.Fragment>
+          <Search
+            submitForm={this.handleSubmit}
+            searchValue={this.handleChange}
+            inputValue={this.state.searchTerm}
+          />
+          <MoviesList
+            movies={this.state.movies}
+            viewMovieInfo={this.viewMovieInfo}
+          />
+        </React.Fragment>
       );
     } else {
       return (
         <React.Fragment>
-          <MovieInfo 
+          <MovieInfo
             currentMovie={this.state.currentMovie}
             closeMovieInfo={this.closeMovieInfo}
           />
@@ -90,9 +88,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <div className="App">
-          {this.displaySearchArea()}
-        </div>
+        <div className="App">{this.displaySearchArea()}</div>
         <Footer />
       </React.Fragment>
     );
