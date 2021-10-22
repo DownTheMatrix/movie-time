@@ -1,151 +1,151 @@
-.MovieInfo {  /* Div */
-    padding: 2rem;
+.MovieInfo {
+  padding: 2rem;
 }
 
 .MovieInfo-btn-wrapper {
-    margin: 1rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .MovieInfo-btn {
-    padding: 1.25rem 2.25rem;
-    border-radius: 10rem;
-    outline: none;
-    border: 1px solid teal;
-    background-color: #fff;
-    color: teal;
-    transition: all .4s ease;
+  padding: 1.25rem 2.25rem;
+  border-radius: 10rem;
+  outline: none;
+  border: 1px solid teal;
+  background-color: #fff;
+  color: teal;
+  transition: all 0.4s ease;
 }
 
 .MovieInfo-btn:hover {
-    cursor: pointer;
-    background-color: teal;
-    color: #fff;
+  cursor: pointer;
+  background-color: teal;
+  color: #fff;
 }
 
-.MovieInfo-container {  /* Grid container */
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-    grid-gap: 2rem;
-    padding: 1rem;
+.MovieInfo-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+  padding: 1rem;
 }
 
-.Movieinfo-box {  /* Div (1st flex child) */
-    width: 100%;
+.Movieinfo-box {
+  width: 100%;
 }
 
-.MovieInfo-poster {  /* Image */
-    max-width: 100%;
-    height: auto;
+.MovieInfo-poster {
+  max-width: 100%;
+  height: auto;
 }
 
-.MovieInfo-details {  /* Div (2nd flex child) */
-    align-self: stretch;
+.MovieInfo-details {
+  align-self: stretch;
 }
 
 .MovieInfo-alt-title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .MovieInfo-title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .MovieInfo-date {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 400;
 }
 
 .MovieInfo-summary {
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    text-align: left;
-    line-height: 1.6;
-    color: rgba(0,0,0,0.6);
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-align: left;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.MovieInfo-rating {  /* Paragraph */
-    margin-top: 2rem;
+.MovieInfo-rating {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.MovieInfo-rating-label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: teal;
+}
+
+@media (min-width: 48em) {
+  .MovieInfo-container {
+    grid-template-columns: 1fr 2fr;
     text-align: left;
+  }
+  .MovieInfo-alt-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+
+  .MovieInfo-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+
+  .MovieInfo-date {
     font-size: 2rem;
+    margin-top: 1rem;
     font-weight: 400;
+  }
+
+  .MovieInfo-summary {
+    font-size: 1.8rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+    width: 80%;
+  }
 }
 
-.MovieInfo-rating-label {  /* Span */
-    font-size: 1.8rem;
+@media (min-width: 63.75em) {
+  .MovieInfo-container {
+    grid-template-columns: 2fr 3fr;
+  }
+  .MovieInfo-alt-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .MovieInfo-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .MovieInfo-date {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  .MovieInfo-summary {
+    font-size: 2rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+    width: 80%;
+  }
+  .MovieInfo-rating {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  .MovieInfo-rating-label {
+    font-size: 2rem;
     font-weight: bold;
     color: teal;
-}
-
-@media (min-width: 48em) {  /* 768px */
-    .MovieInfo-container {
-        grid-template-columns: 1fr 2fr;
-        text-align: left;
-    }
-    .MovieInfo-alt-title {
-        font-size: 2.4rem;
-        font-weight: bold;
-    }
-    
-    .MovieInfo-title {
-        font-size: 2.4rem;
-        font-weight: bold;
-    }
-    
-    .MovieInfo-date {
-        font-size: 2rem;
-        margin-top: 1rem;
-        font-weight: 400;
-    }
-    
-    .MovieInfo-summary {
-        font-size: 1.8rem;
-        text-align: left;
-        color: rgba(0,0,0,0.6);
-        width: 80%;
-    }
-}
-
-@media (min-width: 63.75em) {  /* 1020px */
-    .MovieInfo-container {
-        grid-template-columns: 2fr 3fr;
-    }
-    .MovieInfo-alt-title {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    
-    .MovieInfo-title {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-    
-    .MovieInfo-date {
-        font-size: 2.2rem;
-        margin-top: 1rem;
-        font-weight: 400;
-    }
-    
-    .MovieInfo-summary {
-        font-size: 2rem;
-        text-align: left;
-        color: rgba(0,0,0,0.6);
-        width: 80%;
-    }
-    .MovieInfo-rating {  /* Paragraph */
-        margin-top: 2rem;
-        text-align: left;
-        font-size: 2.4rem;
-        font-weight: 400;
-    }
-    
-    .MovieInfo-rating-label {  /* Span */
-        font-size: 2rem;
-        font-weight: bold;
-        color: teal;
-    }
+  }
 }

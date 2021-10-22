@@ -1,28 +1,32 @@
 .Navbar {
-    background-color: #081c24;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 15vh;
+  background-color: #081c24;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 15vh;
 }
 
 .Navbar-heading {
-    color: #fff;
-    font-size: 4rem;
-    width: 100%;
-    text-align: center;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.Navbar-heading h1 {
+  font-size: 4rem;
 }
 
 .Navbar-heading .hl {
-    color: #01d277;
+  color: #01d277;
 }
 
-@media (min-width: 31.25em) {  /* 500px */
-    .Navbar-logo {
-        margin-left: 4rem;
-    }
-    .Navbar-logo img {
-        width: 15rem;
-        height: 15rem;
-    }
+@media (min-width: 31.25em) {
+  /* 500px */
+  .Navbar-logo {
+    margin-left: 4rem;
+  }
+  .Navbar-logo img {
+    width: 15rem;
+    height: 15rem;
+  }
 }
