@@ -1,22 +1,8 @@
 .MoviesList {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: auto;
   grid-gap: 1rem;
   justify-items: center;
   align-items: stretch;
-}
-
-@media (min-width: 37.5em) {
-  /* 600px */
-  .MoviesList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 63.75em) {
-  /* 1020px */
-  .MoviesList {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
