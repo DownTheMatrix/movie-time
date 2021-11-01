@@ -19,7 +19,6 @@ class Search extends Component {
             value={this.props.inputValue}
             onChange={this.props.searchValue}
           />
-          {/* <button className="Search-filter">Filter Content</button> */}
         </form>
       </div>
     );
